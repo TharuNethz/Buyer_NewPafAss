@@ -2,11 +2,14 @@
 <%@page import="com.Buyer"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Buyer Details</title>
+
+<!--Link Bootstrap, jQuery, and Buyer.js to the BuyerDetails page-->
 <link rel="stylesheet" href="Views/bootstrap.css">
 <script src="Components/jquery-3.2.1.min.js"></script>
 <script src="Components/Buyer.js"></script>
@@ -38,6 +41,7 @@ font-weight: bold;
 </style>
 
 </head>
+<!--Structure of the page-->
 <body>
 
 	<h1>GadgetBadget System - Buyer</h1>
@@ -46,7 +50,7 @@ font-weight: bold;
 	<h2>---Add Buyer Details--- </h2>
 	<br>
 
-	<!--add form-->
+	<!--Develop the form-->
 	
 	<div class="addform">
 		<form name="formBuyerinfo" id="formBuyerinfo" class="form-horizontal font-weight-bold" action="BuyerDetails.jsp" method="post" >

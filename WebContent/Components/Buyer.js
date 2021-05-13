@@ -1,3 +1,5 @@
+//implement both the controller and client-server in Buyer.js
+
 $(document).ready(function()
 {
  $("#alertSuccess").hide();
@@ -41,7 +43,7 @@ if (status == "success")
  var resultSet = JSON.parse(response);
  if (resultSet.status.trim() == "success")
  {
- $("#alertSuccess").text("Successfully saved.");
+ $("#alertSuccess").text("Saved successfully");
  $("#alertSuccess").show();
  $("#divBuyerGrid").html(resultSet.data);
  } else if (resultSet.status.trim() == "error")
@@ -160,4 +162,3 @@ return "Insert Email.";
 }
 return true;
 }
-//test
